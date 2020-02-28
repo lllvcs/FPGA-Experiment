@@ -1,0 +1,38 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity hour is
+port (clk,clr:in std_logic;
+		seg0,seg1:out std_logic_vector(3 downto 0);
+		outclk:out std_logic);
+
+end hour;
+
+architecture behav of min is
+signal cnt1,cnt0:std_logic_vector(3 downto 0);
+begin
+			process(clk)
+			begin
+			if(clr='0')then
+			cnt0<="0000";
+			cnt1<="0000";
+			elsif(clk'event and clk='1')then
+			if cnt1="0101" and cnt0="1001" then
+			outclk<='1';
+			cnt0<="0000";
+			cnt1<="0000";
+			elsif cnt0="1001" and cnt1/="0101" then
+			cnt1<=(cnt1+1);
+			cnt0<="0000";
+			outclk<='0';
+			else
+			cnt0<=(cnt0+1);
+			outclk<='0';
+			end if;
+			end if;
+			seg1<=cnt1;
+			seg0<=cnt0;
+			end process;
+end behav;

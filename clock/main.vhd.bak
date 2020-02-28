@@ -1,0 +1,35 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY BUSSELECTOR IS
+    PORT (
+        A0 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        A1 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        A2 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        A3 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        A4 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        A5 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        A6 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        A7 : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        SEL : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        Yx : OUT STD_LOGIC_VECTOR(3 DOWNTO 0));
+END ENTITY BUSSELECTOR;
+
+ARCHITECTURE behav OF BUSSELECTOR IS
+BEGIN
+    PROCESS (SEL) BEGIN
+        CASE SEL(3 DOWNTO 0) IS
+            WHEN "0000" => Yx <= A0; -- 0
+            WHEN "0001" => Yx <= A1; -- 1
+            WHEN "0010" => Yx <= "1111"; -- 2
+            WHEN "0011" => Yx <= A3; -- 3
+            WHEN "0100" => Yx <= A4; -- 4
+            WHEN "0101" => Yx <= "1111"; -- 5
+            WHEN "0110" => Yx <= A6; -- 6
+            WHEN "0111" => Yx <= A7; -- 7  
+            WHEN OTHERS => NULL;
+        END CASE;
+    END PROCESS;
+END ARCHITECTURE behav;

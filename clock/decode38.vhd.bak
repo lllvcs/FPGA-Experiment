@@ -1,0 +1,27 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+ENTITY decode38 IS
+    PORT (
+        input : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
+        output : OUT STD_LOGIC_VECTOR(7 DOWNTO 0));
+END ENTITY decode38;
+
+ARCHITECTURE behav OF decode38 IS
+BEGIN
+    PROCESS (Ax) BEGIN
+        CASE Ax(3 DOWNTO 0) IS
+            WHEN "0000" => Yx<="01111111" ; -- 0
+            WHEN "0001" => Yx<="10111111" ; -- 1
+            WHEN "0010" => Yx<="11011111" ; -- 2
+            WHEN "0011" => Yx<="11101111" ; -- 3
+            WHEN "0100" => Yx<="11110111" ; -- 4
+            WHEN "0101" => Yx<="11111011" ; -- 5
+            WHEN "0110" => Yx<="11111101" ; -- 6
+            WHEN "0111" => Yx<="11111110" ; -- 7
+            WHEN OTHERS => NULL ; -- NULL
+        END CASE ;
+    END PROCESS ;
+END ARCHITECTURE behav ;

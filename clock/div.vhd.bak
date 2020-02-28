@@ -1,0 +1,28 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity div is
+    port(
+        clk     : IN STD_LOGIC;
+        outclk  : OUT STD_LOGIC);
+end entity div;
+
+architecture behav of div is
+signal count : STD_LOGIC_VECTOR(32 DOWNTO 0) ;
+signal O : STD_LOGIC ;
+
+begin
+    process(clk)
+    begin
+        if clk'event and clk='1' then
+            count <= count + 1 ;
+            if count = x then
+                count <= (others => '0');
+                O <= NOT O;
+            end if;
+        end if; 
+    end process;
+    outclk <= O;
+end;

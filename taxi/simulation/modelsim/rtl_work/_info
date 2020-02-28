@@ -1,0 +1,307 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/FPGA/taxi/simulation/modelsim
+Edistance
+Z1 w1576896650
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z6 8D:/FPGA/taxi/distance.vhd
+Z7 FD:/FPGA/taxi/distance.vhd
+l0
+L6
+VH@czBSj<2b3Lm>_Sd5K<Z2
+!s100 =C7ECGeP5[zhJCak76e`:3
+Z8 OV;C;10.5b;63
+31
+Z9 !s110 1576897805
+!i10b 1
+Z10 !s108 1576897805.000000
+Z11 !s90 -reportprogress|300|-93|-work|work|D:/FPGA/taxi/distance.vhd|
+Z12 !s107 D:/FPGA/taxi/distance.vhd|
+!i113 1
+Z13 o-93 -work work
+Z14 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 8 distance 0 22 H@czBSj<2b3Lm>_Sd5K<Z2
+l17
+L14
+VHVbaKOGe0ZNAfC=Y4g<O93
+!s100 0oW2J@n3geY;cGnW34ic@2
+R8
+31
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Ediv
+Z15 w1576668924
+R2
+R3
+R4
+R5
+R0
+Z16 8D:/FPGA/taxi/div.vhd
+Z17 FD:/FPGA/taxi/div.vhd
+l0
+L6
+VV]PGMANheSF9Z893L9c;J0
+!s100 ??LkXci>`4k^2FGG=zLaB2
+R8
+31
+R9
+!i10b 1
+R10
+Z18 !s90 -reportprogress|300|-93|-work|work|D:/FPGA/taxi/div.vhd|
+Z19 !s107 D:/FPGA/taxi/div.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 3 div 0 22 V]PGMANheSF9Z893L9c;J0
+l19
+L13
+VDHjQ@QXZXXYLXPJj:`^2Y2
+!s100 BG1Xhk4lKSf^nRz>;LA>>2
+R8
+31
+R9
+!i10b 1
+R10
+R18
+R19
+!i113 1
+R13
+R14
+Eseg_trans
+Z20 w1576896362
+R2
+R3
+R4
+R5
+R0
+Z21 8D:/FPGA/taxi/seg_trans.vhd
+Z22 FD:/FPGA/taxi/seg_trans.vhd
+l0
+L6
+VfgbXX?@EC2R9F8<5d:QlE0
+!s100 EhUZU0i9?_F@:e>EUQQD62
+R8
+31
+Z23 !s110 1576897804
+!i10b 1
+Z24 !s108 1576897804.000000
+Z25 !s90 -reportprogress|300|-93|-work|work|D:/FPGA/taxi/seg_trans.vhd|
+Z26 !s107 D:/FPGA/taxi/seg_trans.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 9 seg_trans 0 22 fgbXX?@EC2R9F8<5d:QlE0
+l13
+L12
+V7^]g[MgN;D4Az]WVJid>60
+!s100 S3?o2]iMBQ4n52f>BU<N61
+R8
+31
+R23
+!i10b 1
+R24
+R25
+R26
+!i113 1
+R13
+R14
+Esum_price
+Z27 w1576894308
+R2
+R3
+R4
+R5
+R0
+Z28 8D:/FPGA/taxi/sum_price.vhd
+Z29 FD:/FPGA/taxi/sum_price.vhd
+l0
+L6
+V1CRzc[WQmP5ZSd>=ATPX`2
+!s100 J^2QPWO?PGLmmAIeJXo1F0
+R8
+31
+R9
+!i10b 1
+R10
+Z30 !s90 -reportprogress|300|-93|-work|work|D:/FPGA/taxi/sum_price.vhd|
+Z31 !s107 D:/FPGA/taxi/sum_price.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 9 sum_price 0 22 1CRzc[WQmP5ZSd>=ATPX`2
+l15
+L13
+V6iaQFIniEIMfhkPkl_4Pm2
+!s100 QoLMia66@A^L;a8gMQkCS3
+R8
+31
+R9
+!i10b 1
+R10
+R30
+R31
+!i113 1
+R13
+R14
+Etaxi_sim
+Z32 w1576852291
+R4
+R5
+R0
+Z33 8D:/FPGA/taxi/taxi_sim.vhd
+Z34 FD:/FPGA/taxi/taxi_sim.vhd
+l0
+L4
+V9KCk5zF8;c0_f8E]2`8H80
+!s100 b;9N=kJ=hfOiGbA>j?:_]0
+R8
+31
+Z35 !s110 1576897806
+!i10b 1
+Z36 !s108 1576897806.000000
+Z37 !s90 -reportprogress|300|-93|-work|work|D:/FPGA/taxi/taxi_sim.vhd|
+Z38 !s107 D:/FPGA/taxi/taxi_sim.vhd|
+!i113 1
+R13
+R14
+Ataxi_arch
+R4
+R5
+DEx4 work 8 taxi_sim 0 22 9KCk5zF8;c0_f8E]2`8H80
+l39
+L6
+VFlnaHDA0bCmV]h?QQzMJ<3
+!s100 Ol67mE0jNF12Y;i@UIIX?0
+R8
+31
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R13
+R14
+Etime_price
+Z39 w1576896736
+R2
+R3
+R4
+R5
+R0
+Z40 8D:/FPGA/taxi/time_price.vhd
+Z41 FD:/FPGA/taxi/time_price.vhd
+l0
+L6
+VS2QBdJFY5lUz_hmkff2;j3
+!s100 agiRg>cch1cGd_AJzZ[_63
+R8
+31
+R23
+!i10b 1
+R24
+Z42 !s90 -reportprogress|300|-93|-work|work|D:/FPGA/taxi/time_price.vhd|
+Z43 !s107 D:/FPGA/taxi/time_price.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 10 time_price 0 22 S2QBdJFY5lUz_hmkff2;j3
+l14
+L12
+V]?[2j@M>ic?@WoOKjLl1L0
+!s100 zFgXDVSZEoD`8M28lV[DU2
+R8
+31
+R23
+!i10b 1
+R24
+R42
+R43
+!i113 1
+R13
+R14
+Etrans
+Z44 w1576894505
+R2
+R3
+R4
+R5
+R0
+Z45 8D:/FPGA/taxi/trans.vhd
+Z46 FD:/FPGA/taxi/trans.vhd
+l0
+L6
+VbmeFT0EQ7`QgZ<OU73Vz81
+!s100 cR=bcZ_]PNL05Y1a3CORV2
+R8
+31
+R9
+!i10b 1
+R10
+Z47 !s90 -reportprogress|300|-93|-work|work|D:/FPGA/taxi/trans.vhd|
+Z48 !s107 D:/FPGA/taxi/trans.vhd|
+!i113 1
+R13
+R14
+Abehav
+R2
+R3
+R4
+R5
+DEx4 work 5 trans 0 22 bmeFT0EQ7`QgZ<OU73Vz81
+l15
+L13
+VLacTgamNYYT4zRS>A@0RQ2
+!s100 [EB;I^z@RIVkEd9azzFcb2
+R8
+31
+R9
+!i10b 1
+R10
+R47
+R48
+!i113 1
+R13
+R14

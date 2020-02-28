@@ -1,0 +1,135 @@
+LIBRARY ieee;
+USE ieee.std_logic_1164.ALL;
+
+ENTITY taxi_sim IS
+END taxi_sim;
+ARCHITECTURE taxi_arch OF taxi_sim IS
+	-- constants                                                 
+	-- signals                                                   
+	SIGNAL clk : STD_LOGIC;
+	SIGNAL clk_distance : STD_LOGIC;
+	SIGNAL pause : STD_LOGIC;
+	SIGNAL pin_name1 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL pin_name2 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL pin_name3 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL pin_name4 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL pin_name5 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL pin_name6 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL pin_name7 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL pin_name8 : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL start : STD_LOGIC;
+	SIGNAL stop : STD_LOGIC;
+	COMPONENT taxi
+		PORT (
+			clk : IN STD_LOGIC;
+			clk_distance : IN STD_LOGIC;
+			pause : IN STD_LOGIC;
+			pin_name1 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			pin_name2 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			pin_name3 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			pin_name4 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			pin_name5 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			pin_name6 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			pin_name7 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			pin_name8 : OUT STD_LOGIC_VECTOR(7 DOWNTO 0);
+			start : IN STD_LOGIC;
+			stop : IN STD_LOGIC
+		);
+	END COMPONENT;
+BEGIN
+	i1 : taxi
+	PORT MAP(
+		-- list connections between master ports and signals
+		clk => clk,
+		clk_distance => clk_distance,
+		pause => pause,
+		pin_name1 => pin_name1,
+		pin_name2 => pin_name2,
+		pin_name3 => pin_name3,
+		pin_name4 => pin_name4,
+		pin_name5 => pin_name5,
+		pin_name6 => pin_name6,
+		pin_name7 => pin_name7,
+		pin_name8 => pin_name8,
+		start => start,
+		stop => stop
+	);
+
+	-- clk
+	t_prcs_clk : PROCESS
+	BEGIN
+		LOOP
+			clk <= '0';
+			WAIT FOR 50 ms;
+			clk <= '1';
+			WAIT FOR 50 ms;
+		END LOOP;
+	END PROCESS t_prcs_clk;
+	
+	
+	-- clk_distance
+	t_prcs_clk_distance : PROCESS
+	BEGIN
+		LOOP
+			clk_distance <= '0';
+			WAIT FOR 2000 ms;
+			clk_distance <= '1';
+			WAIT FOR 50 ms;
+			clk_distance <= '0';
+			WAIT FOR 4000 ms;
+			clk_distance <= '1';
+			WAIT FOR 50 ms;
+			clk_distance <= '0';
+			WAIT FOR 2500 ms;
+			clk_distance <= '1';
+			WAIT FOR 50 ms;
+			clk_distance <= '0';
+			WAIT FOR 3000 ms;
+			clk_distance <= '1';
+			WAIT FOR 50 ms;
+			clk_distance <= '0';
+			WAIT FOR 5000 ms;
+			clk_distance <= '1';
+			WAIT FOR 50 ms;
+			clk_distance <= '0';
+			WAIT FOR 1500 ms;
+			clk_distance <= '1';
+			WAIT FOR 50 ms;
+		END LOOP;
+	END PROCESS t_prcs_clk_distance;
+
+
+
+	-- pause
+	t_prcs_pause : PROCESS
+	BEGIN
+		pause <= '0';
+		WAIT FOR 30000 ms;
+		pause <= '1';
+		WAIT FOR 20000 ms;
+		pause <= '0';
+		WAIT;
+	END PROCESS t_prcs_pause;
+
+	-- start
+	t_prcs_start : PROCESS
+	BEGIN
+		start <= '0';
+		WAIT FOR 6000 ms;
+		start <= '1';
+		WAIT;
+	END PROCESS t_prcs_start;
+
+	-- stop
+	t_prcs_stop : PROCESS
+	BEGIN
+		stop <= '1';
+		WAIT FOR 5000 ms;
+		stop <= '0';
+		WAIT FOR 66000 ms;
+		stop <= '1';
+		WAIT FOR 20000 ms;
+		stop <= '0';
+		WAIT;
+	END PROCESS t_prcs_stop;
+END taxi_arch;

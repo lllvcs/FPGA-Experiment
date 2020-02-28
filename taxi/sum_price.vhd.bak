@@ -1,0 +1,34 @@
+LIBRARY IEEE;
+USE IEEE.STD_LOGIC_1164.ALL;
+USE IEEE.STD_LOGIC_ARITH.ALL;
+USE IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+/* 路程计价规则 : 起步价10元3km，每500m 1元，超过20km部分加收50%返程费, 3min => 2.5yuan */
+
+ENTITY sum_price IS
+	PORT (
+		clk2, start, rst, pause : IN std_logic;
+		price_time : OUT INTEGER;
+	);
+END ENTITY sum_price;
+
+ARCHITECTURE behav OF sum_price IS
+	SIGNAL count, price : INTEGER;
+BEGIN
+	PROCESS (clk2, start, stop, pause) BEGIN
+		IF (clk'event AND clk2 = '1') THEN
+			IF (stop = '1' OR start = '0') THEN
+				count := 0;
+				price := 0;
+			ELSIF (start = '1' AND pause = '1')
+				count : count + 1;
+			END IF;
+			IF (count >= 180) THEN
+				price := price + 25;
+				count := 0;
+			END IF;
+		END IF;
+		price_time <= price;
+
+	END PROCESS;
+END ARCHITECTURE behav;

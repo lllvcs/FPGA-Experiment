@@ -1,0 +1,121 @@
+# Reading D:/intelFPGA/18.1/modelsim_ase/tcl/vsim/pref.tcl
+# do taxi_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying D:/intelFPGA/18.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {D:/FPGA/taxi/time_price.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:04 on Dec 21,2019
+# vcom -reportprogress 300 -93 -work work D:/FPGA/taxi/time_price.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity time_price
+# -- Compiling architecture behav of time_price
+# End time: 11:10:04 on Dec 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/FPGA/taxi/seg_trans.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:04 on Dec 21,2019
+# vcom -reportprogress 300 -93 -work work D:/FPGA/taxi/seg_trans.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity seg_trans
+# -- Compiling architecture behav of seg_trans
+# End time: 11:10:04 on Dec 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/FPGA/taxi/div.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:05 on Dec 21,2019
+# vcom -reportprogress 300 -93 -work work D:/FPGA/taxi/div.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity div
+# -- Compiling architecture behav of div
+# End time: 11:10:05 on Dec 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/FPGA/taxi/distance.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:05 on Dec 21,2019
+# vcom -reportprogress 300 -93 -work work D:/FPGA/taxi/distance.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity distance
+# -- Compiling architecture behav of distance
+# End time: 11:10:05 on Dec 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/FPGA/taxi/sum_price.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:05 on Dec 21,2019
+# vcom -reportprogress 300 -93 -work work D:/FPGA/taxi/sum_price.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity sum_price
+# -- Compiling architecture behav of sum_price
+# End time: 11:10:05 on Dec 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {D:/FPGA/taxi/trans.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:05 on Dec 21,2019
+# vcom -reportprogress 300 -93 -work work D:/FPGA/taxi/trans.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity trans
+# -- Compiling architecture behav of trans
+# End time: 11:10:05 on Dec 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {D:/FPGA/taxi/taxi_sim.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:10:06 on Dec 21,2019
+# vcom -reportprogress 300 -93 -work work D:/FPGA/taxi/taxi_sim.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity taxi_sim
+# -- Compiling architecture taxi_arch of taxi_sim
+# End time: 11:10:06 on Dec 21,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs="+acc"  taxi_sim
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneive -L rtl_work -L work -voptargs=""+acc"" taxi_sim 
+# Start time: 11:10:06 on Dec 21,2019
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.taxi_sim(taxi_arch)
+# ** Warning: (vsim-3473) Component instance "i1 : taxi" is not bound.
+#    Time: 0 ps  Iteration: 0  Instance: /taxi_sim File: D:/FPGA/taxi/taxi_sim.vhd
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# End time: 11:10:26 on Dec 21,2019, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 1

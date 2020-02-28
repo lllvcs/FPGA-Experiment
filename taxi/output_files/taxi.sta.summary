@@ -1,0 +1,149 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'div:inst12|y'
+Slack : -20.901
+TNS   : -519.578
+
+Type  : Slow 1200mV 85C Model Setup 'clk_time'
+Slack : -3.375
+TNS   : -195.712
+
+Type  : Slow 1200mV 85C Model Setup 'clk_distance'
+Slack : -2.986
+TNS   : -97.792
+
+Type  : Slow 1200mV 85C Model Setup 'div:inst12|x'
+Slack : -2.512
+TNS   : -58.522
+
+Type  : Slow 1200mV 85C Model Hold 'clk_time'
+Slack : 0.409
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div:inst12|x'
+Slack : 0.425
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'div:inst12|y'
+Slack : 0.430
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_distance'
+Slack : 0.479
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_time'
+Slack : -3.000
+TNS   : -90.380
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_distance'
+Slack : -3.000
+TNS   : -54.400
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div:inst12|y'
+Slack : -1.285
+TNS   : -137.495
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'div:inst12|x'
+Slack : -1.285
+TNS   : -33.410
+
+Type  : Slow 1200mV 0C Model Setup 'div:inst12|y'
+Slack : -18.787
+TNS   : -463.563
+
+Type  : Slow 1200mV 0C Model Setup 'clk_time'
+Slack : -3.013
+TNS   : -173.955
+
+Type  : Slow 1200mV 0C Model Setup 'clk_distance'
+Slack : -2.613
+TNS   : -85.646
+
+Type  : Slow 1200mV 0C Model Setup 'div:inst12|x'
+Slack : -2.219
+TNS   : -51.162
+
+Type  : Slow 1200mV 0C Model Hold 'clk_time'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div:inst12|x'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'div:inst12|y'
+Slack : 0.397
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_distance'
+Slack : 0.433
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_time'
+Slack : -3.000
+TNS   : -90.380
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_distance'
+Slack : -3.000
+TNS   : -54.400
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div:inst12|y'
+Slack : -1.285
+TNS   : -137.495
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'div:inst12|x'
+Slack : -1.285
+TNS   : -33.410
+
+Type  : Fast 1200mV 0C Model Setup 'div:inst12|y'
+Slack : -9.554
+TNS   : -205.063
+
+Type  : Fast 1200mV 0C Model Setup 'clk_time'
+Slack : -1.067
+TNS   : -57.345
+
+Type  : Fast 1200mV 0C Model Setup 'clk_distance'
+Slack : -0.928
+TNS   : -26.317
+
+Type  : Fast 1200mV 0C Model Setup 'div:inst12|x'
+Slack : -0.690
+TNS   : -14.636
+
+Type  : Fast 1200mV 0C Model Hold 'clk_time'
+Slack : 0.184
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div:inst12|y'
+Slack : 0.189
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'div:inst12|x'
+Slack : 0.192
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_distance'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_time'
+Slack : -3.000
+TNS   : -75.814
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_distance'
+Slack : -3.000
+TNS   : -49.485
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div:inst12|y'
+Slack : -1.000
+TNS   : -107.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'div:inst12|x'
+Slack : -1.000
+TNS   : -26.000
+
+------------------------------------------------------------

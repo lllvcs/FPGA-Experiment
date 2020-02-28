@@ -1,0 +1,253 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "dis_decade[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_decade[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_decade[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_decade[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_decade[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_decade[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_decade[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_hundred[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_hundred[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_hundred[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_hundred[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_hundred[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_hundred[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_hundred[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_mil[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_mil[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_mil[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_mil[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_mil[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_mil[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_mil[0]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_unit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_unit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_unit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_unit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_unit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_unit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "dis_unit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "price_decade[6]",
+					"strict" : false
+				},
+				{
+					"name" : "price_decade[5]",
+					"strict" : false
+				},
+				{
+					"name" : "price_decade[4]",
+					"strict" : false
+				},
+				{
+					"name" : "price_decade[3]",
+					"strict" : false
+				},
+				{
+					"name" : "price_decade[2]",
+					"strict" : false
+				},
+				{
+					"name" : "price_decade[1]",
+					"strict" : false
+				},
+				{
+					"name" : "price_decade[0]",
+					"strict" : false
+				},
+				{
+					"name" : "price_hundred[6]",
+					"strict" : false
+				},
+				{
+					"name" : "price_hundred[5]",
+					"strict" : false
+				},
+				{
+					"name" : "price_hundred[4]",
+					"strict" : false
+				},
+				{
+					"name" : "price_hundred[3]",
+					"strict" : false
+				},
+				{
+					"name" : "price_hundred[2]",
+					"strict" : false
+				},
+				{
+					"name" : "price_hundred[1]",
+					"strict" : false
+				},
+				{
+					"name" : "price_hundred[0]",
+					"strict" : false
+				},
+				{
+					"name" : "price_mil[6]",
+					"strict" : false
+				},
+				{
+					"name" : "price_mil[5]",
+					"strict" : false
+				},
+				{
+					"name" : "price_mil[4]",
+					"strict" : false
+				},
+				{
+					"name" : "price_mil[3]",
+					"strict" : false
+				},
+				{
+					"name" : "price_mil[2]",
+					"strict" : false
+				},
+				{
+					"name" : "price_mil[1]",
+					"strict" : false
+				},
+				{
+					"name" : "price_mil[0]",
+					"strict" : false
+				},
+				{
+					"name" : "price_unit[6]",
+					"strict" : false
+				},
+				{
+					"name" : "price_unit[5]",
+					"strict" : false
+				},
+				{
+					"name" : "price_unit[4]",
+					"strict" : false
+				},
+				{
+					"name" : "price_unit[3]",
+					"strict" : false
+				},
+				{
+					"name" : "price_unit[2]",
+					"strict" : false
+				},
+				{
+					"name" : "price_unit[1]",
+					"strict" : false
+				},
+				{
+					"name" : "price_unit[0]",
+					"strict" : false
+				},
+				{
+					"name" : "clk_time",
+					"strict" : false
+				},
+				{
+					"name" : "clk_distance",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "stop",
+					"strict" : false
+				},
+				{
+					"name" : "pause",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

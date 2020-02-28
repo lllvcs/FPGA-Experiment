@@ -1,0 +1,17 @@
+Analysis & Synthesis Status : Successful - Mon Nov 04 22:36:06 2019
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : clock
+Top-level Entity Name : clock2
+Family : Cyclone V
+Logic utilization (in ALMs) : N/A
+Total registers : 60
+Total pins : 50
+Total virtual pins : 0
+Total block memory bits : 0
+Total DSP Blocks : 0
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0
+Total DLLs : 0
